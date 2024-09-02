@@ -36,3 +36,12 @@ function clearInputs(){
     document.getElementById('bookDescription').value = '';
     document.getElementById('pagesNumber').value = '';
 }
+
+function deleteBook(){
+    if (books.length > 0){
+    books.splice(0,1);
+    showbooks();
+    } else {
+        alert('No books to delete.');
+    }
+}
